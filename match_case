@@ -1,0 +1,12 @@
+import random
+secret_number = random.randint(1, 10)
+guess = int(input("Guess the number"))
+match guess:
+    case True:
+        print("Congratulations")
+    case 1 , 10:
+        if guess > 10:
+            print("Oops, your guess is a bit high. Try again!")
+        elif guess < 1:
+            print("Nope, your guess is a bit low. Give it another shot!")
+        
